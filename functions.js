@@ -18,9 +18,5 @@ module.exports = {
             target = message.member;
 
         return target;
-    },
-
-    formatDate: function(date) {
-        return new Int16Array.DateTimeFormat('en-US').format(date);
     }
 }
