@@ -30,7 +30,7 @@ module.exports = {
             **> Joined at:** ${joined}
             **> Roles:** ${roles}`, true)
 
-            .addField('User Information', stripIndents`**> ID:** ${member.use.id}
+            .addField('User Information', stripIndents`**> ID:** ${member.user.id}
             **> Username:** ${member.user.username}
             **> Discord Tag:** ${member.user.tag}
             **> Created at:** ${created}`, true)
