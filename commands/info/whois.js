@@ -1,5 +1,5 @@
 const { getMember, formatDate } = require("../../functions.js");
-const { MemberEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { stripIndents } = require("common-tags");
 
 module.exports = {
@@ -21,7 +21,7 @@ module.exports = {
         // User variables
         const created = formatDate(member.user.createdAt);
 
-        const embed = new MemberEmbed()
+        const embed = new MessageEmbed()
             .setFooter(member.displayName, member.user.displayAvatarURL())
             .setThumbnail(member.user.displayAvatarURL())
             .setColor(member.displayHexColor === "#000000" ? "#ffffff" : member.displayHexColor)
