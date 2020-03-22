@@ -8,7 +8,7 @@ module.exports = {
             target = message.mentions.members.first();
 
         if (!target && toFind) {
-            target = message.guild.members.find(member => {
+            target = message.guild.members.chache.find(member => {
                 return member.displayName.toLowerCase().includes(toFind) ||
                 member.user.tag.toLowerCase().includes(toFind)
             });
