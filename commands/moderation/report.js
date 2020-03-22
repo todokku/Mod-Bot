@@ -20,7 +20,7 @@ module.exports = {
         if (!args[1])
             return message.channel.send("Please provide a reason for the report!").then(m => m.delete({timeout: 5000}));
 
-        const channel = message.guild.channels.find(channel => channel.name === "reports");
+        const channel = message.guild.channels.cache.find(channel => channel.name === "reports");
 
         if (!channel)
             return message.channel.send("I could not find a \`#reports`\ channel").then(m => m.delete({timeout: 5000}));
