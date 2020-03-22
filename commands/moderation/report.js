@@ -34,6 +34,8 @@ module.exports = {
             **> Reported by:** ${message.member} (${message.member.id})
             **> Reported in:** ${message.channel}
             **> Reason:** ${args.slice(1).join(" ")}`);
+        
+        message.channel.send("User successfully reported!")
 
         return channel.send(embed);
     }
