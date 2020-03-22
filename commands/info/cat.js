@@ -4,6 +4,7 @@ module.exports = {
     category: "info",
     description: "Shows a cute picture of a cat",
     run: async (client, message, args) => {
+        const superagent = require("superagent");
 
         let msg = await message.channel.send("Looking for kitty...")
 
