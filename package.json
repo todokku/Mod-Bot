@@ -1,0 +1,16 @@
+{
+  "name": "modbot",
+  "version": "1.0.0",
+  "description": "A Moderation Bot for MBS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "josh",
+  "license": "ISC",
+  "dependencies": {
+    "ascii-table": "0.0.9",
+    "discord.js": "^12.0.2",
+    "dotenv": "^8.2.0"
+  }
+}
