@@ -19,7 +19,7 @@ module.exports = {
             .setColor(roleColor)
             .setDescription(args.join(" "))
             .setTimestamp()
-            .setAuthor(message.author.username, message.author.displayAvatarURL)
+            .setAuthor(message.author.username, message.author.AvatarURL())
             .setFooter(client.user.username, client.user.displayAvatarURL);
             
             message.channel.send(embed);
