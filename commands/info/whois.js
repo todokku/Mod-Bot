@@ -24,6 +24,7 @@ module.exports = {
         const embed = new MemberEmbed()
             .setFooter(member.displayName, member.user.displayAvatarURL())
             .setThumbnail(member.user.displayAvatarURL())
+            .setColor(member.displayHexColor === "#000000" ? "#ffffff" : member.displayHexColor)
 
             .addField('Member information', stripIndents`**> Display name:** ${member.displayName}
             **> Joined at:** ${joined}
